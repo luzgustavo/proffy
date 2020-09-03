@@ -1,0 +1,131 @@
+#page-teacher-list {
+   width: 100vw;
+   height: 100vh;
+}
+
+#search-teachers {
+   margin-top: 3.2rem;
+}
+
+#search-teachers select,
+#search-teachers input, 
+#search-teachers button {
+   font-size: 1.4rem;
+}
+
+#search-teachers label {
+   color: var(--color-text-in-primary);
+}
+
+#search-teachers .button-block {
+   margin-top: 2.4rem;
+}
+
+#search-teachers .select-block + .input-block  {
+   margin-top: 1.4rem;
+}
+
+#search-teachers .button-block label {
+   font-size: 1.4rem;
+}
+ 
+#search-teachers input { 
+   text-align: center;
+} 
+
+#search-teachers .button-block button {
+   width: 100%;
+   height: 5.6rem; 
+   color: var(--color-button-text);
+   background-color: var(--color-secundary);
+   border: none;
+   border-radius: 0.8rem;
+   outline: 0;
+   padding: 0 2.6rem; 
+   transition: background-color 0.2s;
+   cursor: pointer;
+}
+
+#search-teachers .button-block button:hover {
+   background-color: var(--color-secundary-dark);
+}
+
+#search-teachers .button-block button img {
+   width: 2.4rem;
+   margin-bottom: -0.4rem;
+}
+
+#search-teachers #formError {
+   position: fixed;
+   right: 2rem;
+   bottom: 2rem;
+   background-color: #c5183e;
+   color: #fff;
+   padding: 1.2rem 2rem;
+   border-radius: 0.8rem;
+   font-size: 1.2rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#search-teachers #formError button {
+   border: 0;
+   background-color: transparent; 
+   cursor: pointer;
+   transition: opacity .2s;
+   margin-left: 1.6rem;
+}
+#search-teachers #formError button:hover {
+   opacity: .5;
+}
+
+#search-teachers #formError button img { 
+   height: 1.2rem;
+}
+ 
+#page-teacher-list main {
+   margin: 3.2rem auto;
+   width: 90%;
+}
+
+#teacher-empty {
+   background-color: var(--color-box-base);
+   border: 1px solid var(--color-line-in-white);
+   border-radius: 0.8rem;
+   padding: 2.4rem;
+   margin-top: 2.4rem;
+}
+ 
+@media (min-width: 700px) {
+   #page-teacher-list {
+      max-width: 100%;
+   }
+
+   #search-teachers {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr auto;
+      column-gap: 16px;
+      position: absolute;
+      bottom: -30px;
+   } 
+
+   #search-teachers .input-block + .input-block,
+   #search-teachers .select-block + .select-block,
+   #search-teachers .select-block + .input-block {
+      margin-top: 0;
+   } 
+
+   #search-teachers .button-block {
+      display: flex;
+      align-items: flex-end;
+   }
+
+   #page-teacher-list main {
+      padding: 3.2rem 0;
+      max-width: 740px;
+      margin: 0 auto;
+   }
+
+}

@@ -27,6 +27,7 @@ routes.get('/classes', classesControllers.index);
 routes.post('/connections', connectionsControllers.create);
 routes.get('/connections', connectionsControllers.index);
 
+/*
 routes.delete('/users/:id', (request, response) => {
    console.log(request.params);
 });
@@ -35,5 +36,6 @@ routes.get('/users', (request, response) => {
  
    return response.json({ 'message' : 'get' });
 });
+*/
 
 export default routes;
